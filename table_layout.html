@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <title>Layout table</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+<!--
+Макет двухколоночный с единым контейнером, простой
+Ширина задается пикселями - 968
+В контейнере: шапка, меню, основная часть( content + sidebar ), подвал
+Меню состоит из 5 ячеек
+-->
+
+<!-- Begin: Main container table -->
+<table cellspacing="0" cellpadding="0" width="960px" align="center" class="main_container">
+    <tbody>
+        <!-- Header -->
+        <tr class="header">
+            <td bgcolor="black" align="center" height="160px" colspan="5" width="960px">
+                <!-- Logo image -->
+                <img src="slide2.jpg" width="960px" height="360px" title="Шапка" />
+                <!-- /Logo image -->
+            </td>
+        </tr>
+        <!-- /Header -->
+        
+        <!-- Menu -->
+        <tr>
+            <td width="192px" align="center" height="50px" background="block_title.jpg">Главная</td>
+            <td width="192px" bgcolor="#ff80ff" align="center" height="50px" background="block_title.jpg">Форум</td>
+            <td width="192px" align="center" height="50px" background="block_title.jpg">Галерея</td>
+            <td width="192px" bgcolor="#ff80ff" align="center" height="50px" background="block_title.jpg">Моды</td>
+            <td width="192px" align="center" height="50px" background="block_title.jpg">Участники</td> 
+        </tr>
+        <!-- /Menu -->
+        
+        <!-- Main -->
+        <tr>            
+            <!-- Content -->
+            <td align="center" colspan="3" bgcolor="#cfcaea" valign="top">
+                <!-- News section-->
+                <table cellspacing="0" cellpadding="0" width="572px" align="center">
+                    <!-- News block line-->
+                    <tr align="center">
+                        <td bgcolor="#ff80ff" width="572px">
+                            <!-- News block container-->
+                            <table cellspacing="0" cellpadding="0" width="572px" align="center">
+                                <!-- Header news block-->
+                                <tr align="left">
+                                    <td width="572px" height="43px" bgcolor="#c74234">
+                                        <font color="#000" size="5"><b>&nbsp;&nbsp;Заголовок нашей новости</b></font>
+                                    </td>
+                                </tr>
+                                <!-- /Header news block -->
+                                <!-- Main news block -->
+                                <tr align="center">
+                                    <td width="572px" bgcolor="#e74c3c">
+                                        <!-- -->
+                                        <table cellspacing="0" cellpadding="0" width="572px" align="center">
+                                            <tr align="center">
+                                                <td width="110px" bgcolor="#808080">
+                                                    <!-- News image -->
+                                                    <img width="110px" height="110px" src="https://titanquest.org.ua/_nw/1/46790647.jpg" />
+                                                    <!-- /News image -->
+                                                </td>
+                                                <!-- News text -->
+                                                <td width="462px" bgcolor="#e74c3c" valign="top" align="left">Текст новости, который рассказывает нам о том, о сём и еще много о чем</td>
+                                                <!-- /News text -->
+                                            </tr>
+                                        </table>
+                                        <!-- /-->
+                                    </td>
+                                </tr>
+                                <!-- /Main news block -->
+                                <!-- Footer news block -->
+                                <tr align="left">
+                                    <td width="572px" bgcolor="#bb2717">
+                                        <span>&nbsp;&nbsp;Просмотров: 3411</span>&nbsp;<b>|</b>&nbsp;
+                                        <span>Комментариев: 2</span>&nbsp;<b>|</b>&nbsp;
+                                        <span>Рейтинг: 4,938&nbsp;(1031 голос)</span>
+                                    </td>
+                                </tr>
+                                <!-- /Footer news block -->
+                                <!-- Replies news block -->
+                                <tr align="center">
+                                    <td width="572px" bgcolor="#80ff80">
+                                        <!-- Comment1 -->
+                                        <table cellspacing="0" cellpadding="0" width="572px" align="center">
+                                            <tr align="center">
+                                                <!-- User Avatar -->
+                                                <td width="50px" height="50px" bgcolor="#80ff00" rowspan="2">
+                                                    <img width="50px" height="50px" src="https://titanquest.org.ua/avatar/27/978711.jpg" />
+                                                </td>
+                                                <!-- /User Avatar -->
+                                                <!-- User nick name -->
+                                                <td width="522px" bgcolor="#800080" align="left">&nbsp;&nbsp;UserName</td>
+                                                <!-- /User nick name -->
+                                            </tr>
+                                            <tr align="left">
+                                                <!-- User comment -->
+                                                <td width="522px" bgcolor="#ff80ff">Комментарий пользователя, который включает <i>наклонный текст</i>, <b>жирное</b> начертание, да и выравнивание у текста тут по <u>левому</u> краю.</td>
+                                                <!-- /User comment -->
+                                            </tr>
+                                        </table>
+                                        <!-- /Comment1 -->
+                                        <br />
+                                        <!-- Comment2 -->
+                                        <table cellspacing="0" cellpadding="0" width="572px" align="center">
+                                            <tr align="center">
+                                                <!-- User Avatar -->
+                                                <td width="50px" height="50px" bgcolor="#80ff00" rowspan="2">
+                                                    <img width="50px" height="50px" src="https://titanquest.org.ua/.s/img/icon/social/noavatar.png" />
+                                                </td>
+                                                <!-- /User Avatar -->
+                                                <!-- User nick name -->
+                                                <td width="522px" bgcolor="#800080" align="left">&nbsp;&nbsp;UserName2</td>
+                                                <!-- /User nick name -->
+                                            </tr>
+                                            <tr align="left">
+                                                <!-- User comment -->
+                                                <td width="522px" bgcolor="#ff80ff">Комментарий пользователя, который включает <i>наклонный текст</i>, <b>жирное</b> начертание, да и выравнивание у текста тут по <u>левому</u> краю.</td>
+                                                <!-- /User comment -->
+                                            </tr>
+                                        </table>
+                                        <!-- /Comment2 -->
+                                    </td>
+                                </tr>
+                                <!-- /Replies news block -->
+                            </table>
+                            <!-- /News block container -->
+                        </td>
+                    </tr>
+                    <!-- /News block line-->
+                </table>
+                <!-- /News section-->
+            </td>
+            <!-- /Content -->
+            
+            <!-- Sidebar -->
+            <td align="center" colspan="2" bgcolor="#123456">
+                <!-- Sidebar blocks section -->
+                <table cellspacing="0" cellpadding="0" width="382px" align="center">
+                    <!-- block1 line -->
+                    <tr align="center">
+                        <td bgcolor="#ff7dff" width="382px">
+                            <!-- block1 container-->
+                            <table cellspacing="0" cellpadding="0" width="382px" align="center">
+                                <!-- Header block -->
+                                <tr align="center">
+                                    <td width="382px" height="43px" bgcolor="#186ba0" background=""><font color="#fff" size="">Меню</font></td>
+                                </tr>
+                                <!-- /Header block -->
+                                <!-- Main block -->
+                                <tr align="left">
+                                    <td width="382px" bgcolor="#2183c1">
+                                        <ul>
+                                            <li>
+                                                <a href="https://ya.ru/?q=Синус">Синус</a>
+                                            </li>
+                                            <ul>
+                                                <li>
+                                                    <a href="https://ya.ru/?q=Арксинус">Арксинус</a>
+                                                </li>
+                                            </ul>
+                                            <li>
+                                                <a href="https://ya.ru/?q=Косинус">Косинус</a>
+                                            </li>
+                                            <ul>
+                                                <li>
+                                                    <a href="https://ya.ru/?q=Арккосинус">Арккосинус</a>
+                                                </li>
+                                            </ul>
+                                            <li>
+                                                <a href="https://ya.ru/?q=Тангенс">Тангенс</a>
+                                            </li>
+                                            <ul>
+                                                <li>
+                                                    <a href="https://ya.ru/?q=Арктангенс">Арктангенс</a>
+                                                </li>
+                                            </ul>
+                                            <li>
+                                                <a href="https://ya.ru/?q=Котангенс">Котангенс</a>
+                                            </li>
+                                            <ul>
+                                                <li>
+                                                    <a href="https://ya.ru/?q=Арккотангенс">Арккотангенс</a>
+                                                </li>
+                                            </ul>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <!-- /Main block -->
+                            </table>
+                            <!-- /block1 container -->
+                            <b>&nbsp;</b>
+                            <!-- block2 container-->
+                            <table cellspacing="0" cellpadding="0" width="382px" align="center">
+                                <!-- Header block -->
+                                <tr align="center">
+                                    <td width="382px" height="43px" bgcolor="#1b826e"><font color="#fff" size="">Авторизация</font></td>
+                                </tr>
+                                <!-- /Header block -->
+                                <!-- Main block -->
+                                <tr align="right">
+                                    <td width="382px" bgcolor="#16a085">
+                                        <form action="/" method="POST">
+                                            <span>Логин:&nbsp;</span><input type="text" size="45" value="Логин" /><br />
+                                            <span>Пароль:&nbsp;</span><input type="password" size="45" value="123456" /><br />
+                                            <input type="button" value="Войти" /><input type="checkbox" checked/><span>Запомнить меня &nbsp;</span><br />
+                                            <center>
+                                                <a href="/reg.php" title="Зарегистрироваться">Регистрация</a>&nbsp;<b>|</b>&nbsp;
+                                                <a href="/forgot.php" title="Восстановить пароль">Восстановить пароль</a>&nbsp;
+                                            </center>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <!-- /Main block -->
+                            </table>
+                            <!-- /block2 container -->
+                        </td>
+                    </tr>
+                    <!-- /block1 line-->
+                </table>
+                <!-- /Sidebar blocks section -->
+            </td>
+            <!-- /Sidebar -->
+        </tr>
+        <!-- /Main -->
+        
+        <!-- Footer -->
+        <tr>
+            <td bgcolor="#a678aa" align="center" height="100px" colspan="5" width="960px">
+                <font color="#fff" size="5">Подвал</font>
+            </td>
+        </tr>
+        <!-- /Footer -->
+    </tbody>
+</table>
+<!-- End: Main container table -->
+</body>
+</html>
